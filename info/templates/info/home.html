@@ -1,0 +1,257 @@
+{% extends 'base.html'%}
+{% load static%}
+
+{% block css%}
+<style>
+*{
+font-family: 'Poppins', sans-serif;
+}
+   #con{
+
+   height:100vh;
+      background-color: #485461;
+background-image:url("https://images.unsplash.com/photo-1605379399642-870262d3d051?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=781&q=80"),linear-gradient(315deg, #485461 0%, #28313b 74%);
+  background-blend-mode: overlay;
+   background-size:cover;
+   }
+
+   #button{
+   margin-top:40px;
+   }
+      #button1{
+   margin-top:40px;
+   }
+
+#img1{
+
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+    margin-left: 680px;
+    border-radius:50%;
+    border:5px solid white;
+}
+@media only screen and (max-width: 900px){
+#img1{
+
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+    margin-left: 303px;
+}
+}
+@media only screen and (max-width: 600px){
+#img1{
+
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+    margin-left: 150px;
+}
+}
+
+@media only screen and (max-width: 425px){
+	#img1{
+
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+    margin-left: 126px;
+    border-radius:50%;
+    border:5px solid white;
+}
+}
+
+@media only screen and (max-width: 380px){
+	#img1{
+
+    margin-top: 100px;
+    height: 150px;
+    width: 150px;
+    margin-left: 100px;
+    border-radius:50%;
+    border:5px solid white;
+}
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+</style>
+{% endblock %}
+
+{% block content%}
+
+<div class="container-fluid" style="margin:0px; padding:0px;">
+    <div class="col-md-12 col-sm-12" id="con">
+        <p id="imgpara">
+            <img class="img-fluid" id="img1" src="{% static 'info/2.jpeg'%}">
+        <h1 style="text-align:center" class="text-white p-3">Shahid khan</h1>
+        <h5 style="text-align:center; line-height:150%;" class="text-white p-3">Full Stack Web Developer.Doing Bse From
+            Comsats.</h5>
+        </p>
+
+        <p style="text-align:center;">
+
+            <a class="btn btn-success btn-lg" id="button" href="{% url 'hiree'%}"> Hire Me</a>
+
+            <a class="btn btn-outline-warning btn-lg text-white" id="button1" href="/media/cv/cvv.docx">Download cv</a>
+        </p>
+    </div>
+
+
+    <div class="container p-5 shadow mt-3" id="cvv">
+        <h2 class="text-center mb-3 p-3">About Me</h2>
+        <div class="row m-3">
+            <div class="col-md-5 p-2" style="border-right: 6px solid red;border-left: 2px solid rgb(34, 34, 41); ">
+                Education:
+            </div>
+            <div class="col-md-5 p-2">Comsats University Islamabad wah Campus from 2017 to 2021 doing Bachelor of
+                Software Engineering with 2.75 cgpa out of 4
+            </div>
+        </div>
+        <hr>
+        <div class="row m-3">
+            <div class="col-md-5 p-2" style="border-right: 6px solid red;border-left: 2px solid rgb(34, 34, 41); ">
+                Projects:
+            </div>
+            <div class="col-md-5 p-2">
+                <h5>FYP</h3>
+                    <ul>
+                        <li>Build & Buy (Like PC Part Picker)</li>
+
+                    </ul>
+                    <h5>Semester Projects</h3>
+                        <ul>
+                            <li>Job Portal</li>
+                            <li>hospital Managment System</li>
+                            <li>Fly Digital</li>
+                            <li>Ecommerce Website</li>
+                            <li>Enventory Managment (develop in java ,awt ,Swing)</li>
+                            <li>House Price Pridction</li>
+                            <li>Online Course Website</li>
+                            <li>Social Media Website</li>
+                        </ul>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row m-3">
+            <div class="col-md-5 p-2" style="border-right: 6px solid red;border-left: 2px solid rgb(34, 34, 41); ">
+                Technical Skills:
+            </div>
+            <div class="col-md-5 p-2">
+                <ul>
+                    <li><b>Basic :</b> React , Node js , flutter , Android , Machine Learning , Data Science</li>
+                    <li><b>Intermediate :</b> java , OOP , Php ,Laravel , C/C++ , Photoshop , Premier Pro , Ms
+                        Office(Include excel, Db),Radius , Mango Db ,Wordpress,UML
+                    </li>
+                    <li><b>Advance :</b> Web Development ,Django , Django-rest-Framework , Python ,SQL , SQLite
+                        JavaScript(ES6) , Php ,HTML ,CSS ,BOOTSTRAP
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row m-3">
+            <div class="col-md-5 p-2" style="border-right: 6px solid red;border-left: 2px solid rgb(34, 34, 41); ">
+                Language Skills:
+            </div>
+            <div class="col-md-5 p-2">
+                <ul>
+                    <li><b>Native(Urdu) :</b> Excellent</li>
+                    <li><b>English :</b> Intermediate</li>
+                    <li><b>Chinese :</b> Basic</li>
+
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row m-3">
+            <div class="col-md-5 p-2" style="border-right: 6px solid red;border-left: 2px solid rgb(34, 34, 41); ">
+                Experience:
+            </div>
+            <div class="col-md-5 p-2">
+                <ul>
+                    <li>Web Development (Django)</li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row m-3">
+            <div class="col-md-5 p-2" style="border-right: 6px solid red;border-left: 2px solid rgb(34, 34, 41); ">
+                Interest:
+            </div>
+            <div class="col-md-5 p-2">
+                <ul>
+                    <li>Web Development</li>
+                    <li>Free Lancing</li>
+
+
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div class="container shadow-lg mt-5 p-5">
+        <div class="row">
+            <div class="col-md-5 col-sm-10">
+                <h2 class="p-2">About me</h2>
+                <p class="text-justify p-3">Hello my name is shahid khan doing BSE from comsats wah i am a full stack
+                    web developer applying for internship !</p>
+            </div>
+            <div class="col-md-5 col-sm-10 ms-auto">
+                <h2 class="p-2">Bio</h2>
+                <div class="p-3">
+                    <table style="width:80%;">
+
+                        <tr>
+                            <td>Email</td>
+                            <td></td>
+                            <td></td>
+                            <td>Shahidkhan501112@gmail.com</td>
+
+                        </tr>
+                        <tr>
+                            <td>Call</td>
+                            <td></td>
+                            <td></td>
+                            <td>03018130376/03360030909</td>
+
+                        </tr>
+                        <tr>
+                            <td>Age</td>
+                            <td></td>
+                            <td></td>
+                            <td>24</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>Address</td>
+                            <td></td>
+                            <td></td>
+                            <td>main Bazar Hassan Abdal</td>
+
+                        </tr>
+
+
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

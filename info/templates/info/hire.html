@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load widget_tweaks %}
+{% block css%}
+<style>
+
+       @media only screen and (min-width: 1200px){
+    .mmm{
+      margin-left:150px;
+    }
+
+
+}
+</style>
+
+{% endblock %}
+
+
+  <br><br>
+{% block content%}
+{% comment %} <center>
+    <h3 class='alert alert-success'>Send Us Your Valuable Feedback !</h3>
+
+    <form method="POST">
+      <!-- Very Important csrf Token -->
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Send Message" class='btn btn-primary btn-lg'>
+      </div>
+    </form>
+  </center>  {% endcomment %}
+
+ <div class="container">
+<h1 class="text-center m-5 p-3">Contact Me</h1>
+<hr>
+  <div class="row">
+   <div class="col-md-5 mt-5 mb-5">
+   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.623817981935!2d72.78446691505609!3d33.74454238069076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfa6bc26bfa2db%3A0x2344c019578abeac!2sCOMSATS%20University%20Islamabad%2C%20Wah%20Campus!5e0!3m2!1sen!2s!4v1620494897503!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+   </div>
+   <div class="col-md-5 mmm mt-5">
+
+
+
+           <form method="post">
+               {% csrf_token %}
+  <div class="form-group">
+    <label for="exampleInputEmail1" class="pb-2">Company Name</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter CompanyName" name="company">
+  </div>
+               <br>
+ <div class="form-group">
+  <label for="exampleFormControlTextarea3" class="pb-2">Message</label>
+  <textarea class="form-control" id="exampleFormControlTextarea3" rows="7" name="message"></textarea>
+</div>
+  <input type="submit" class="btn btn-primary mt-2" value="send">
+</form>
+
+
+
+   </div>
+  </div>
+</div>
+
+{% endblock %}
